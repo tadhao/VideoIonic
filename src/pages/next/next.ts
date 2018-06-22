@@ -42,5 +42,9 @@ navigate(){
 navigateAgain(){
   this.navCtrl.push("AgainNextPage");
 }
+navigateAgainBrowse(){
+  this.navCtrl.push("BrowserPage");
+}
 
 }
+//https://stackoverflow.com/questions/9097605/how-to-make-a-loading-image-when-loading-html5-video

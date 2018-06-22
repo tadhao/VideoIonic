@@ -15,12 +15,29 @@
 
 <ion-content >
 
-  <video width="100%" block controls src="assets/imgs/001introduction.mp4" controls="controls">
-   </video>
-   <video width="100%" block controls  src="assets/imgs/music.mp4" controls="controls">
+  <video poster="assets/imgs/logo.png" width="100%" block controls src="assets/imgs/001introduction.mp4" controls="controls"
+  >
    </video>
 
-   <button block ion-button (click)="navigate()">Click me!</button>
-   <button block ion-button (click)="navigateAgain()">Click me! </button>
+   <video poster="assets/imgs/logo.png" width="100%" block controls  src="assets/imgs/music.mp4"></video>
+<div>
+    <video width="100%"  block controls>
+     <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4" />
+    </video>
+  </div>
+
+    <video poster="assets/imgs/logo.png" autoplay width="100%"  block controls>
+      <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4" />
+     </video>
+
+     <video class="bg_vid" poster="assets/imgs/logo.png" autoplay width="100%"  block controls>
+      <source src="http://plumbdry.opensoftindia.in/media/video/ea3c7b15-5a9.3gp" />
+     </video>
+
+     <video class="bg_vid" width="100%" src="http://plumbdry.opensoftindia.in/media/video/ea3c7b15-5a9.3gp" block controls>
+
+     </video>
+
+   <button block ion-button (click)="navigateAgainBrowse()">Browser! </button>
 
 </ion-content>

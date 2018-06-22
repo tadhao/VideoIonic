@@ -25,26 +25,48 @@ export class AgainNextPage {
   private videoPlayer: VideoPlayer) {
   }
 
-  ionViewDidLoad() {
-  //   console.log('ionViewDidLoad AgainNextPage');  let options: StreamingVideoOptions = {
-  //     successCallback: () => { console.log('Video played') },
-  //     errorCallback: (e) => { console.log('Error streaming') },
-  //     orientation: 'landscape'
+  // navigatePlay() {
+  //   let options: StreamingVideoOptions = {
+  //     successCallback: () => { console.log('Finished Video') },
+  //     errorCallback: (e) => { console.log('Error: ', e) },
+  //     orientation: 'portrait'
   //   };
 
-  //   this.streamingMedia.playVideo('https://drive.google.com/file/d/1NeJM8UmhgnDHodXK-GlueNbWkFjPMm7w/view?usp=drivesdk', options);
-  }
-async navigatePlay(){
-  try{
-this.videoOptions={
-  volume: 0.7
-}
-this.videoUrl="https://drive.google.com/file/d/1NeJM8UmhgnDHodXK-GlueNbWkFjPMm7w/view?usp=drivesdk";
-this.videoPlayer.play(this.videoUrl, this.videoOptions);
-  }
-  catch(e){
-    console.error(e);
-  }
+  //   // http://www.sample-videos.com/
+  //   this.streamingMedia.playVideo('http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4', options);
+  // }
+// stopVideo(){
+//   this.videoPlayer.close();
+//   console.log("video has stoped");
+// }
+
+
+// async navigatePlay(){
+//   try{
+// this.videoOptions={
+//   volume: 0.7
+// }
+// this.videoUrl="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4"
+
+// setTimeout(()=>{
+//   this.stopVideo();
+// },10000);
+
+// await this.videoPlayer.play(this.videoUrl, this.videoOptions);
+// console.log("video is complited");
+//   }
+//   catch(e){
+//     console.error(e);
+//   }
+// }
+
+
+navigatePlay(){
+  this.videoPlayer.play('http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4').then(() => {
+ console.log('video completed');
+}).catch(err => {
+ console.log(err);
+});
 }
 
 }

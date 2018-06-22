@@ -16,6 +16,7 @@ import { VideoPlayer } from '@ionic-native/video-player';
 
 import { IonicStorageModule } from '@ionic/storage';
 import { StreamingMedia } from '@ionic-native/streaming-media';
+import {InAppBrowser} from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { StreamingMedia } from '@ionic-native/streaming-media';
     Media,
     File,
     VideoPlayer,
-    StreamingMedia
+    StreamingMedia,
+    InAppBrowser
 
   ]
 })
