@@ -18,6 +18,11 @@ import { IonicStorageModule } from '@ionic/storage';
 import { StreamingMedia } from '@ionic-native/streaming-media';
 import {InAppBrowser} from '@ionic-native/in-app-browser';
 
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+//import { File } from '@ionic-native/file';
+import { Camera } from '@ionic-native/camera';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -42,7 +47,11 @@ import {InAppBrowser} from '@ionic-native/in-app-browser';
     File,
     VideoPlayer,
     StreamingMedia,
-    InAppBrowser
+    InAppBrowser,
+    FileTransfer,
+    FileTransferObject,
+    File,
+    Camera
 
   ]
 })
